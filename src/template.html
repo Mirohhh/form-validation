@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
-
 <body>
+    <main>
+        <section>
+            <h1>Sign Up</h1>
+            <form action="" onsubmit="event.preventDefault()">
+                <div id="form-data">
+                    <div id="un-div">
+                        <label for="username">Username <span>*</span></label>
+                        <input type="text" id="username" >
+                    </div>
+                    <div id="email-div">
+                        <label for="email">E-Mail <span>*</span></label>
+                        <input type="email" id="email" >
+                    </div>
+                    <div id="country-div">
+                        <label for="country">Country <span>*</span></label>
+                        <input type="text" id="country" maxlength="16">
+                    </div>
+                    <div id="zc-div">
+                        <label for="zipcode">Zipcode <span>*</span></label>
+                        <input type="text" id="zipcode" maxlength="10">
+                    </div>
+                    <div id="p-div">
+                        <label for="password">Password <span>*</span></label>
+                        <input type="password" id="password"  maxlength="16">
+                    </div>
+                    <div id="cp-div">
+                        <label for="cpassword">Confirm Password <span>*</span></label>
+                        <input type="password" id="cpassword"  maxlength="16">
+                    </div>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
-
 </html>
